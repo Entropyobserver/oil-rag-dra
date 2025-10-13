@@ -1,0 +1,43 @@
+# 数据处理配置
+data_processing:
+  # PDF解析配置  
+  pdf_parser:
+    extract_images: false
+    extract_tables: true
+    min_text_length: 10
+  
+  # 文本分块配置
+  chunker:
+    min_words: 30
+    max_words: 150
+    overlap_ratio: 0.1
+    preserve_sentences: true
+  
+  # 双语对齐配置
+  aligner:
+    model_name: "paraphrase-multilingual-mpnet-base-v2"
+    similarity_threshold: 0.70
+    section_threshold: 0.60
+    batch_size: 32
+
+# 数据路径配置
+paths:
+  raw_data: "data/raw"
+  processed_data: "data/processed" 
+  reports_dir: "data/reports"
+  metadata_dir: "data/metadata"
+  
+  # 处理后的数据路径
+  aligned_dir: "data/processed/aligned"
+  embeddings_dir: "data/processed/embeddings"
+  paragraphs_dir: "data/processed/paragraphs"
+
+# 支持的语言
+languages:
+  - en  # English
+  - no  # Norwegian
+
+# 报告年份范围
+year_range:
+  start: 2010
+  end: 2024

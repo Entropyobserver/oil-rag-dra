@@ -1,0 +1,13 @@
+{
+  "total_en_chunks": 1278,
+  "total_no_chunks": 536,
+  "total_alignments": 328,
+  "coverage_en": 0.2566510172143975,
+  "coverage_no": 0.6119402985074627,
+  "avg_similarity": 0.7724451342733895,
+  "high_confidence": 114,
+  "medium_confidence": 194,
+  "low_confidence": 20,
+  "bidirectional_matches": 131,
+  "bidirectional_ratio": 0.39939024390243905
+}
