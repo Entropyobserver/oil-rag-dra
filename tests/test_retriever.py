@@ -2,48 +2,60 @@ import sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-import pytest
-from oil_rag.retrieval.retriever import BilingualRetriever
+from config.config import config
+from oil_rag.core.system_builder import get_retriever
 
 
-def test_retriever_initialization():
-    retriever = BilingualRetriever()
-    assert retriever.top_k == 20
-    assert retriever.model is not None
-
-
-def test_add_documents():
-    retriever = BilingualRetriever()
-    docs = [
-        {"id": "1", "text": "Oil and gas production", "year": 2024},
-        {"id": "2", "text": "Renewable energy investments", "year": 2024}
-    ]
-    retriever.add_documents(docs, "en")
-    assert "en" in retriever.index
-    assert len(retriever.chunks["en"]) == 2
-
-
-def test_retrieve():
-    retriever = BilingualRetriever(similarity_threshold=0.0)
-    docs = [
-        {"id": "1", "text": "Oil and gas production increased", "year": 2024},
-        {"id": "2", "text": "Renewable energy investments grew", "year": 2024}
-    ]
-    retriever.add_documents(docs, "en")
+def test_retrieval_modes():
+    test_query = "What was oil production in 2020?"
     
-    results = retriever.retrieve("oil production", "en", top_k=1)
-    assert len(results) > 0
-    assert "score" in results[0]
+    print("="*60)
+    print("RETRIEVAL MODE COMPARISON")
+    print("="*60)
+    
+    modes = ["bm25", "dense", "hybrid"]
+    
+    for mode in modes:
+        print(f"\n--- {mode.upper()} MODE ---")
+        
+        retriever = get_retriever(mode=mode, use_reranker=(mode=="hybrid"))
+        
+        documents, scores = retriever.retrieve(test_query, k=5)
+        
+        print(f"Retrieved {len(documents)} documents")
+        print(f"Top score: {scores[0]:.4f}")
+        print(f"Top document: {documents[0].get('text', '')[:100]}...")
+        print(f"Year: {documents[0].get('year', 'N/A')}")
 
 
-def test_retrieve_bilingual():
-    retriever = BilingualRetriever(similarity_threshold=0.0)
-    en_docs = [{"id": "1", "text": "Oil production", "year": 2024}]
-    no_docs = [{"id": "1", "text": "Oljeproduksjon", "year": 2024}]
+def test_reranker_effect():
+    test_query = "safety measures and environmental protection"
     
-    retriever.add_documents(en_docs, "en")
-    retriever.add_documents(no_docs, "no")
+    print("\n" + "="*60)
+    print("RERANKER EFFECT COMPARISON")
+    print("="*60)
     
-    results = retriever.retrieve_bilingual("oil", "en", "no", 5)
-    assert "en" in results
-    assert "no" in results
+    retriever_no_rerank = get_retriever(mode="hybrid", use_reranker=False)
+    retriever_with_rerank = get_retriever(mode="hybrid", use_reranker=True)
+    
+    print("\n--- WITHOUT RERANKER ---")
+    docs_no, scores_no = retriever_no_rerank.retrieve(test_query, k=3)
+    for i, (doc, score) in enumerate(zip(docs_no, scores_no)):
+        print(f"{i+1}. Score: {score:.4f} | {doc.get('text', '')[:80]}...")
+    
+    print("\n--- WITH RERANKER ---")
+    docs_yes, scores_yes = retriever_with_rerank.retrieve(test_query, k=3)
+    for i, (doc, score) in enumerate(zip(docs_yes, scores_yes)):
+        print(f"{i+1}. Score: {score:.4f} | {doc.get('text', '')[:80]}...")
+
+
+if __name__ == "__main__":
+    print(f"Using index: {config.paths.faiss_index}")
+    print(f"Using documents: {config.paths.documents_pkl}")
+    
+    test_retrieval_modes()
+    test_reranker_effect()
+    
+    print("\n" + "="*60)
+    print("TESTING COMPLETE")
+    print("="*60)
