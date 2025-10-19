@@ -60,15 +60,15 @@ class ModelConfig:
 
 @dataclass
 class RetrievalConfig:
-    bm25_k1: float = 1.5
+    bm25_k1: float = 1.2
     bm25_b: float = 0.75
-    dense_top_k: int = 100
-    bm25_top_k: int = 100
-    fusion_method: str = "weighted"
+    dense_top_k: int = 200
+    bm25_top_k: int = 200
+    fusion_method: str = "rrf"
     fusion_alpha: float = 0.5
-    rerank_top_k: int = 10
-    final_top_k: int = 5
-    similarity_threshold: float = 0.7
+    rerank_top_k: int = 50
+    final_top_k: int = 20
+    similarity_threshold: float = 0.5
 
 
 @dataclass
