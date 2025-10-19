@@ -1,19 +1,24 @@
 import re
-from typing import List, Dict, Tuple
+from typing import List, Dict, Optional
 
 
 class SectionExtractor:
     def __init__(self):
         self.section_patterns = [
-            r'^[A-Z][A-Za-z\s]{3,50}$',
-            r'^\d+\.\s+[A-Z][A-Za-z\s]{3,50}$',
-            r'^[A-Z]{2,}[\s\-]+[A-Z]{2,}',
+            r"^[A-Z][A-Za-z\s]{3,50}$",
+            r"^\d+\.\s+[A-Z][A-Za-z\s]{3,50}$",
+            r"^[A-Z]{2,}[\s\-]+[A-Z]{2,}",
         ]
-    
+        self.max_section_length = 100
+        self.min_section_length = 3
+
     def is_section_header(self, text: str) -> bool:
         text = text.strip()
         
-        if len(text) > 100 or len(text) < 3:
+        if len(text) > self.max_section_length:
+            return False
+        
+        if len(text) < self.min_section_length:
             return False
         
         if text.isupper() and len(text.split()) <= 8:
@@ -24,7 +29,7 @@ class SectionExtractor:
                 return True
         
         return False
-    
+
     def extract_sections(self, paragraphs: List[str]) -> List[Dict]:
         sections = []
         current_section = "Introduction"
@@ -34,8 +39,8 @@ class SectionExtractor:
             if self.is_section_header(para):
                 if section_paragraphs:
                     sections.append({
-                        'title': current_section,
-                        'paragraphs': section_paragraphs
+                        "title": current_section,
+                        "paragraphs": section_paragraphs
                     })
                 current_section = para.strip()
                 section_paragraphs = []
@@ -44,14 +49,14 @@ class SectionExtractor:
         
         if section_paragraphs:
             sections.append({
-                'title': current_section,
-                'paragraphs': section_paragraphs
+                "title": current_section,
+                "paragraphs": section_paragraphs
             })
         
         return sections
-    
+
     def normalize_section_title(self, title: str) -> str:
         title = title.lower().strip()
-        title = re.sub(r'\d+\.?\s*', '', title)
-        title = re.sub(r'[^\w\s]', '', title)
+        title = re.sub(r"\d+\.?\s*", "", title)
+        title = re.sub(r"[^\w\s]", "", title)
         return title

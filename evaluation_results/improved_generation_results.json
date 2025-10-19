@@ -1,0 +1,266 @@
+{
+  "improvement_summary": {
+    "f1_improvement": 10.981569965165667,
+    "em_improvement": 0.0,
+    "speed_change": -13.411566557603031,
+    "qualitative_improvements": [
+      "Topic-specific formatting",
+      "Better keyword matching",
+      "Multi-document synthesis",
+      "Temporal organization",
+      "Context-aware extraction"
+    ]
+  },
+  "detailed_results": {
+    "metrics": {
+      "f1": 0.06103986348084112,
+      "exact_match": 0.0,
+      "f1_std": 0.06793413697103733,
+      "em_std": 0.0
+    },
+    "detailed_results": [
+      {
+        "question_id": "operations_003",
+        "question": "What challenges were faced in operations during 2023?",
+        "ground_truth": "4 Upstream CO₂ intensity, Scope 1 (kg CO₂/boe) 14 18 Monitoring indicator Total Recordable Injury Frequency (TRIF) (number per million hours worked)11 3 0 2 5 11) E&P International’s safety indicators include also E&P USA, due to low manhours reported in USA operations 132 132 Equinor 2023 Integrate...",
+        "prediction": "(2022) •\t Project delivery and \noperations\n•\t Joint arrangements and \ncontractors  \n•\t Competition and \ntechnological innovation\n•\t Digital and cyber security\n•\t Crisis management, \nbusiness continuity and \ninsurance coverage\n•\t Health, safety and \nenvironmental factors\nEquity production \nliquids and gas  \n(mboe per day)\n2022 outlook \nguiding ˜2%  \nabove 2021\nProduction cost \nequity volumes \n(USD/...",
+        "category": "operations",
+        "retrieval_time": 0.14812564849853516,
+        "generation_time": 0.00034356117248535156,
+        "total_time": 0.1484692096710205,
+        "docs_found": 5,
+        "top_score": 0.6813898682594299
+      },
+      {
+        "question_id": "strategy_011",
+        "question": "How did the business strategy evolve in 2016?",
+        "ground_truth": "The composition and work of the committees are further described below Audit committee The board of directors elects at least three of its members to serve on the board of directors' audit committee and appoints one of them to act as chair The employee-elected members of the board of directors may n...",
+        "prediction": "Based on the retrieved documents, specific information related to your question was not found.",
+        "category": "strategy",
+        "retrieval_time": 0.0302734375,
+        "generation_time": 0.00015735626220703125,
+        "total_time": 0.03043079376220703,
+        "docs_found": 5,
+        "top_score": 0.6094712018966675
+      },
+      {
+        "question_id": "technology_002",
+        "question": "How was technology used to improve operations in 2019?",
+        "ground_truth": "The Peregrino field development in the prolific Campos basin is Equinor's largest international endeavour as an operator In mid-January 2020, the third Peregrino wellhead platform was in place at the field after installation by Sleipnir, the largest crane vessel in the world The floatel Olympia has ...",
+        "prediction": "Technology and innovation: In 2012: Statoil, Annual report on Form 20-F 2012\n9\n2 3 Our technology\nWe continually develop and deploy innovative technologies to achieve safe and efficient operations and \ndeliver on our strategic objectives We have defined four business-critical aspirations that we will strive to \nachieve over the next decade We believe that technology is a critical success factor in...",
+        "category": "technology",
+        "retrieval_time": 0.026026010513305664,
+        "generation_time": 0.00014519691467285156,
+        "total_time": 0.026171207427978516,
+        "docs_found": 5,
+        "top_score": 0.6512974500656128
+      },
+      {
+        "question_id": "operations_029",
+        "question": "How did operations change in 2015?",
+        "ground_truth": "86 Statoil, Annual Report on Form 20-F 2015 5 Risk review Statoil’s overall risk management includes identifying, evaluating and managing risk in all its activities to ensure safe operations and to achieve Statoil’s corporate goals 5 1 Risk factors Statoil is exposed to a number of risks that could ...",
+        "prediction": "(2018) The standard implies a significant change in lessees’ accounting \nfor leases currently defined as operating leases under IAS 17 Equinor is for the most part a lessee in applying lease \naccounting, and the new leases to be recognised relates to \nleases of rigs, vessels, storage facilities and office buildings Reference is made to note 23 Implementation of IFRS 16 to the \nConsolidated Financi...",
+        "category": "operations",
+        "retrieval_time": 0.02392435073852539,
+        "generation_time": 0.0001976490020751953,
+        "total_time": 0.024121999740600586,
+        "docs_found": 5,
+        "top_score": 0.5962380170822144
+      },
+      {
+        "question_id": "operations_044",
+        "question": "How did operations change in 2018?",
+        "ground_truth": "Equinor, Annual Report and Form 20-F 2018 37 Strategic report The Roncador field is operated by Petrobras, located in the offshore Campos basin The field has been in production since 1999 The hydrocarbon is produced from two semi-submersibles and two FPSOs The oil is offloaded to shuttle tankers, an...",
+        "prediction": "(2018) I tillegg kan bokført \nverdi av oppstrømseiendelene påvirkes av endringer i \nforventede reserver og oppdaterte kostnadsestimater \ngrunnet operasjonell utvikling I 2018 er det regnskapsført flere nedskrivinger, samt \nreverseringer av tidligere nedskrivinger, grunnet \neiendelsspesifikke nedskrivings- eller reverseringsindikatorer, \nhovedsakelig: \n• \nreversering av tidligere nedskriving relate...",
+        "category": "operations",
+        "retrieval_time": 0.02593851089477539,
+        "generation_time": 0.0001723766326904297,
+        "total_time": 0.02611088752746582,
+        "docs_found": 5,
+        "top_score": 0.5692434906959534
+      },
+      {
+        "question_id": "production_017",
+        "question": "How much gas was produced in 2013?",
+        "ground_truth": "Cash flows provided by operations amounted to NOK 128 0 billion in 2012, compared to NOK 119 0 billion in 2011 The increase was largely driven by increased profitability mainly caused by increased volumes of liquids and gas sold and higher liquids and gas prices in 2012 compared to 2011 The increase...",
+        "prediction": "Production information: In 2010, Væsker og gass*\n*Bokført produksjon\nGass\n Væsker\nSamlet lete- og produksjonsvirksomhet hadde en gjennomsnittlig egenproduksjon av olje og gass på \n1,888 millioner fat oljeekvivalenter per dag i 2010 Ved utgangen av 2010 utgjorde våre sikre \nreserver 2 124 millioner fat olje og 3 201 millioner Sm3 naturgass, noe som tilsvarer samlede sikre \nreserver på 5 325 million...",
+        "category": "production",
+        "retrieval_time": 0.0272977352142334,
+        "generation_time": 0.00016832351684570312,
+        "total_time": 0.0274660587310791,
+        "docs_found": 5,
+        "top_score": 0.7036737203598022
+      },
+      {
+        "question_id": "projects_016",
+        "question": "What capital projects were approved in 2018?",
+        "ground_truth": "Licensees are required to prepare a decommissioning plan before a production licence or a licence to establish and use facilities for the transportation and utilisation of petroleum expires or is relinquished, or the use of a facility ceases On the basis of the decommissioning plan, the Ministry of ...",
+        "prediction": "(2024) These include the following sanctioned \n(projects that were subject to a final investment \ndecision) and non-sanctioned projects (project in \nearlier planning phases):\n•\nFull electrification of Troll C, Hammerfest LNG, \nGrane, Snorre A og B (Tampen) •\nPartial electrification of Oseberg field center and \nOseberg South, Njord, Gullfaks C (Tampen), \nHeidrun (Halten), Kristin (Halten) and Åsgar...",
+        "category": "projects",
+        "retrieval_time": 0.02661919593811035,
+        "generation_time": 0.0001964569091796875,
+        "total_time": 0.02681565284729004,
+        "docs_found": 5,
+        "top_score": 0.6408202648162842
+      },
+      {
+        "question_id": "strategy_004",
+        "question": "How did the business strategy evolve in 2022?",
+        "ground_truth": "Equinor’s purpose is turning natural resources into energy for people and progress for society The board has approved a corporate strategy to deliver on this purpose and the strategy has been translated into concrete objectives and targets to align execution At Equinor, the way we deliver is as impo...",
+        "prediction": "(2021) juni 2021 er forretningsområdene som følger: \n• \nUtforskning og produksjon Norge (UPN) \n• \nLeting og produksjon internasjonalt (EPI) \n• \nFornybar (REN) \n• \nTeknologi, digital og innovasjon (TDI) \n• \nProsjekter, boring og anskaffelser (PDP) \n• \nMarkedsføring, midtstrøm og prosessering (MMP) \nKonsernfunksjonene er som følger: \n• \nChief financial officer (CFO) \n• \nSikkerhet, sikring og bærekra...",
+        "category": "strategy",
+        "retrieval_time": 0.024756669998168945,
+        "generation_time": 0.0001983642578125,
+        "total_time": 0.024955034255981445,
+        "docs_found": 5,
+        "top_score": 0.6622205376625061
+      },
+      {
+        "question_id": "operations_004",
+        "question": "What were the main operational activities in 2019?",
+        "ground_truth": "Since the US contained 16% of the Proved reserves in 2017, management has determined that the most meaningful presentation of geographic areas also in 2019 would be Norway, US, and the continents of Eurasia (excluding Norway), Africa, and Americas (excluding US) The following tables reflect the esti...",
+        "prediction": "(2019) Other focus areas for 2019 have been: \n• \nImproved management of produced and processed water \nfrom our offshore and onshore facilities in Norway \n• \nMinimising the use of freshwater and disposal of waste \nwater in US onshore operations \n• \nImproved management of drilling waste \n• \nImproved management of our impact on biodiversity and \neco-system \n• \nPreparation and submittal of an Environm...",
+        "category": "operations",
+        "retrieval_time": 0.027920961380004883,
+        "generation_time": 0.00017213821411132812,
+        "total_time": 0.02809309959411621,
+        "docs_found": 5,
+        "top_score": 0.6076664924621582
+      },
+      {
+        "question_id": "operations_018",
+        "question": "How were offshore operations managed in 2024?",
+        "ground_truth": "The following financial measures may be considered non-GAAP financial measures: a) Net debt to capital employed ratio, Net debt to capital employed ratio adjusted, including lease liabilities and Net debt to capital employed ratio adjusted b) Return on average capital employed (ROACE) c) Organic cap...",
+        "prediction": "(2024) Dette ble delvis utlignet av en økning som \nfølge av endret kostnadsestimat på forlating av et senfaseanlegg som \npåvirket året 2024 som helhet Reversering av nedskrivninger knyttet til varige driftsmidler utgjorde 0 \nmillioner USD i 2024 I 2023 utgjorde reversering av nedskrivninger 266 \nmillioner USD, hovedsakelig knyttet til offshorefeltene i USA De reduserte letekostnadene skyldtes færr...",
+        "category": "operations",
+        "retrieval_time": 0.024489641189575195,
+        "generation_time": 0.0001819133758544922,
+        "total_time": 0.024671554565429688,
+        "docs_found": 5,
+        "top_score": 0.6498067378997803
+      },
+      {
+        "question_id": "operations_032",
+        "question": "How did operations change in 2023?",
+        "ground_truth": "2022 Artbox Report Template All rights reserved © Artbox AS 2022 Guarantees Equinor has guaranteed for its proportionate share of some of our associates’ long-term bank debt, payment obligations under contracts, and certain third-party obligations The total amount guaranteed at year- end 2023 is USD...",
+        "prediction": "(2023) Endrede prinsipper for justert driftsresultat med \nvirkning fra 2023:\nEquinor har gjort følgende endringer i de postene det \njusteres for i justert driftsresultat:\n•\t Med virkning fra 2023 blir endringer i virkelig \nverdi på råvarederivater som brukes til styring av \nprisrisikoeksponering knyttet til framtidige salgs- og \nkjøpskontrakter ekskludert fra justert driftsresultat, \nog utsatt til...",
+        "category": "operations",
+        "retrieval_time": 0.0277712345123291,
+        "generation_time": 0.00015306472778320312,
+        "total_time": 0.027924299240112305,
+        "docs_found": 5,
+        "top_score": 0.6449264287948608
+      },
+      {
+        "question_id": "operations_003",
+        "question": "How did operations change in 2014?",
+        "ground_truth": "Significant changes in the tax regimes of countries in which Statoil operates could have a material adverse effect on its liquidity and results of operations Statoil faces foreign exchange risks that could adversely affect the results of Statoil’s operations Statoil's business faces foreign exchange...",
+        "prediction": "Based on the retrieved documents, specific information related to your question was not found.",
+        "category": "operations",
+        "retrieval_time": 0.02449822425842285,
+        "generation_time": 0.00015783309936523438,
+        "total_time": 0.024656057357788086,
+        "docs_found": 5,
+        "top_score": 0.616806149482727
+      },
+      {
+        "question_id": "technology_006",
+        "question": "How was technology used to improve operations in 2021?",
+        "ground_truth": "4 Segments As from 1 June 2021 Equinor’s operations are managed through the following operating segments (business areas): Exploration & Production Norway (EPN), Exploration & Production International (EPI), Exploration & Production USA (EPUSA), Marketing, Midstream & Processing (MMP), Renewables (R...",
+        "prediction": "Technology and innovation: In 2023: •  Prioritering av medarbeidere\n og kapital\n• Interne leveransemodeller \n og måter å jobbe på\n• Nye forretningsmodeller \n og strategiske samarbeid\n• Kompetanseutvikling\n• Forbedring av sikkerhet, \n sikring og bærekraft og \n robust teknologi\nStrategiske tema\nHva teknologistrategien bidrar til å løse\nStøtte virksomheten i dag\n•  Finne og utnytte samlet \n ressurspo...",
+        "category": "technology",
+        "retrieval_time": 0.028093576431274414,
+        "generation_time": 0.0002200603485107422,
+        "total_time": 0.028313636779785156,
+        "docs_found": 5,
+        "top_score": 0.6537061929702759
+      },
+      {
+        "question_id": "operations_024",
+        "question": "How were offshore operations managed in 2011?",
+        "ground_truth": "3 2 6 2 3 Angola The Angolan continental shelf is the largest contributor to Statoil's production outside Norway It yielded 176 mboe per day in equity production in 2011, 33 0% of Statoil's total international oil and gas output Luanda Dalia Kizomba B Gimboa Kizomba C Mondo CLOV Kizomba A Marimba Gi...",
+        "prediction": "(2024) Dette ble delvis utlignet av en økning som \nfølge av endret kostnadsestimat på forlating av et senfaseanlegg som \npåvirket året 2024 som helhet Reversering av nedskrivninger knyttet til varige driftsmidler utgjorde 0 \nmillioner USD i 2024 I 2023 utgjorde reversering av nedskrivninger 266 \nmillioner USD, hovedsakelig knyttet til offshorefeltene i USA De reduserte letekostnadene skyldtes færr...",
+        "category": "operations",
+        "retrieval_time": 0.0292971134185791,
+        "generation_time": 0.00018548965454101562,
+        "total_time": 0.029482603073120117,
+        "docs_found": 5,
+        "top_score": 0.5793849229812622
+      },
+      {
+        "question_id": "operations_014",
+        "question": "How did operations change in 2024?",
+        "ground_truth": "Physical climate risk Changes in physical climate parameters, such as extreme weather events or chronic physical impacts, as e g rising sea level and higher temperatures could impact Equinor's assets, resulting in disruption to operations, increased costs, or incidents By assessing our portfolio aga...",
+        "prediction": "(2024) I fjerde kvartal 2024 var det en reduksjon i \nforretningsutviklingen etter avvikling av aktiviteter i \nnoen framvoksende markeder, noe som førte til en \nnedgang i administrasjons- og driftskostnader Forbedringen i driftsresultatet for 2024, \nsammenlignet med året før, kan delvis henføres til en \nøkning i inntektene, som utlignet noe av økningen i \ndrifts- og administrasjonskostnader for åre...",
+        "category": "operations",
+        "retrieval_time": 0.025292634963989258,
+        "generation_time": 0.0001895427703857422,
+        "total_time": 0.025482177734375,
+        "docs_found": 5,
+        "top_score": 0.6804206371307373
+      },
+      {
+        "question_id": "operations_005",
+        "question": "How did operations change in 2022?",
+        "ground_truth": "In combination with extraordinary dividend and share buy-back, we expect a total distribution in 2023 of USD 17 billion In 2022, Equinor also contributed with USD 42 8 billion in taxes from operations on the Norwegian continental shelf After costs, taxes, and capital distribution our free cash flow*...",
+        "prediction": "(2021) juni 2021 er forretningsområdene som følger: \n• \nUtforskning og produksjon Norge (UPN) \n• \nLeting og produksjon internasjonalt (EPI) \n• \nFornybar (REN) \n• \nTeknologi, digital og innovasjon (TDI) \n• \nProsjekter, boring og anskaffelser (PDP) \n• \nMarkedsføring, midtstrøm og prosessering (MMP) \nKonsernfunksjonene er som følger: \n• \nChief financial officer (CFO) \n• \nSikkerhet, sikring og bærekra...",
+        "category": "operations",
+        "retrieval_time": 0.023076772689819336,
+        "generation_time": 0.00019311904907226562,
+        "total_time": 0.0232698917388916,
+        "docs_found": 5,
+        "top_score": 0.6685383319854736
+      },
+      {
+        "question_id": "operations_023",
+        "question": "What were the main operational activities in 2024?",
+        "ground_truth": "A significant or prolonged period of low prices could lead to changes in production, impairment of assets or reassessment of the viability of projects and future business opportunities Increases in prices can lead to increased taxes, cost inflation or higher access costs for Equinor Fluctuating fore...",
+        "prediction": "(2024) Key events in 2024\nIn 2024, we maintained high production levels through strong operational performance, proactively managing our portfolios in renewables and oil and gas — and setting \nthe stage for continued value creation and shareholder returns 8\nINTRODUCTION\nCONTENTS\nABOUT US\nOUR \nPERFORMANCE\nSUSTAINABILITY \nSTATEMENT\nFINANCIAL \nSTATEMENTS\nADDITIONAL \nINFORMATION\nEquinor 2024 Annual re...",
+        "category": "operations",
+        "retrieval_time": 0.028369665145874023,
+        "generation_time": 0.00021505355834960938,
+        "total_time": 0.028584718704223633,
+        "docs_found": 5,
+        "top_score": 0.6892827749252319
+      },
+      {
+        "question_id": "operations_055",
+        "question": "What operational improvements were made in 2015?",
+        "ground_truth": "These projects may also have different risk profiles than Statoil's existing portfolio These and other effects of such acquisitions could result in Statoil having to revise either or both of Statoil's forecasts with respect to unit production costs and production In addition, the pursuit of acquisit...",
+        "prediction": "(2024) In \naddition, improvements implemented in 2024 include: \n•\nIncreased formalisation of the double materiality \nassessment process\n•\nImplementation of a top-tier system for \nsustainability reporting, which will increase \nautomation and standardisation of data \ngathering and processing\n•\nStrengthened review process for narrative \ndisclosures supported by a new disclosure tool\nThe ICOFR functio...",
+        "category": "operations",
+        "retrieval_time": 0.02692580223083496,
+        "generation_time": 0.00018906593322753906,
+        "total_time": 0.0271148681640625,
+        "docs_found": 5,
+        "top_score": 0.6373308897018433
+      },
+      {
+        "question_id": "strategy_009",
+        "question": "How did the business strategy evolve in 2017?",
+        "ground_truth": "The foundation for the strategy’s guiding principles is our commitment to safety supported by our people processes; a consistent presence in talent markets; a company culture which embraces digitalisation; building flexibility within the workforce and growing diversity In 2017, we enhanced our perfo...",
+        "prediction": "Based on the retrieved documents, specific information related to your question was not found.",
+        "category": "strategy",
+        "retrieval_time": 0.025110483169555664,
+        "generation_time": 0.00019884109497070312,
+        "total_time": 0.025309324264526367,
+        "docs_found": 5,
+        "top_score": 0.6030114889144897
+      },
+      {
+        "question_id": "operations_005",
+        "question": "What were the main operational activities in 2011?",
+        "ground_truth": "Statoil covers substantially all the costs of any unused capacity, while the costs of used capacity are split in proportion to the produced natural gas volumes of Statoil and the SDFI, respectively The Mongstad refinery has a long-term take-or-pay contract related to purchase of heat from the Troll ...",
+        "prediction": "(2012) KONSOLIDERT KONTANTSTRØMOPPSTILLING\t\n\t\n\t\n\t\n\t\n\t\n\t\nOmarbeidet\t\nTidligere rapportert\t\nFor regnskapsåret\t\nFor regnskapsåret\t\n(i milliarder kroner)\t\n 2011\t\n 2010\t\n 2011\t\n 2010\n\t\n\t\n\t\nKontantstrøm fra operasjonelle aktiviteter\t\n 119,0 \t\n 85,2 \t\n 111,5 \t\n 80,8 \nKontantstrøm benyttet til investeringsaktiviteter\t\n -84,9\t\n -79,3\t\n -88,7\t\n -76,5\nKontantstrøm fra (benyttet til) finansieringsaktiviteter\t...",
+        "category": "operations",
+        "retrieval_time": 0.025735855102539062,
+        "generation_time": 0.00016617774963378906,
+        "total_time": 0.02590203285217285,
+        "docs_found": 5,
+        "top_score": 0.6125650405883789
+      }
+    ],
+    "evaluation_time": 0.6560003757476807,
+    "questions_processed": 20
+  }
+}

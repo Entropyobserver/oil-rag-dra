@@ -1,0 +1,860 @@
+{
+  "timestamp": 1760630910.1519563,
+  "analysis_summary": {
+    "total_queries_analyzed": 50,
+    "complexity_distribution": {
+      "simple": 23,
+      "medium": 27,
+      "complex": 0
+    },
+    "predicted_improvement": 19.13673371299546,
+    "adaptation_throughput": 2645.74780798587
+  },
+  "complexity_analysis": {
+    "complexity_analysis": [
+      {
+        "query": "What challenges were faced in operations during 2023?",
+        "category": "operations",
+        "complexity_level": "simple",
+        "complexity_score": 0.21,
+        "original_f1": 0.06896551724137931,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 3,
+          "similarity_threshold": 0.742,
+          "max_context_length": 512,
+          "lora_rank": 4,
+          "temperature": 0.3
+        }
+      },
+      {
+        "query": "How did the business strategy evolve in 2016?",
+        "category": "strategy",
+        "complexity_level": "medium",
+        "complexity_score": 0.40499999999999997,
+        "original_f1": 0.0,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 6,
+          "similarity_threshold": 0.6405,
+          "max_context_length": 1024,
+          "lora_rank": 8,
+          "temperature": 0.5
+        }
+      },
+      {
+        "query": "How was technology used to improve operations in 2019?",
+        "category": "technology",
+        "complexity_level": "medium",
+        "complexity_score": 0.335,
+        "original_f1": 0.07058823529411765,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 6,
+          "similarity_threshold": 0.6335,
+          "max_context_length": 1024,
+          "lora_rank": 8,
+          "temperature": 0.5
+        }
+      },
+      {
+        "query": "How did operations change in 2015?",
+        "category": "operations",
+        "complexity_level": "medium",
+        "complexity_score": 0.335,
+        "original_f1": 0.0,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 6,
+          "similarity_threshold": 0.6335,
+          "max_context_length": 1024,
+          "lora_rank": 8,
+          "temperature": 0.5
+        }
+      },
+      {
+        "query": "How did operations change in 2018?",
+        "category": "operations",
+        "complexity_level": "medium",
+        "complexity_score": 0.335,
+        "original_f1": 0.02666666666666667,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 6,
+          "similarity_threshold": 0.6335,
+          "max_context_length": 1024,
+          "lora_rank": 8,
+          "temperature": 0.5
+        }
+      },
+      {
+        "query": "How much gas was produced in 2013?",
+        "category": "production",
+        "complexity_level": "simple",
+        "complexity_score": 0.295,
+        "original_f1": 0.02531645569620253,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 3,
+          "similarity_threshold": 0.7589999999999999,
+          "max_context_length": 512,
+          "lora_rank": 4,
+          "temperature": 0.3
+        }
+      },
+      {
+        "query": "What capital projects were approved in 2018?",
+        "category": "projects",
+        "complexity_level": "simple",
+        "complexity_score": 0.16999999999999998,
+        "original_f1": 0.12195121951219513,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 3,
+          "similarity_threshold": 0.734,
+          "max_context_length": 512,
+          "lora_rank": 4,
+          "temperature": 0.3
+        }
+      },
+      {
+        "query": "How did the business strategy evolve in 2022?",
+        "category": "strategy",
+        "complexity_level": "medium",
+        "complexity_score": 0.40499999999999997,
+        "original_f1": 0.0,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 6,
+          "similarity_threshold": 0.6405,
+          "max_context_length": 1024,
+          "lora_rank": 8,
+          "temperature": 0.5
+        }
+      },
+      {
+        "query": "What were the main operational activities in 2019?",
+        "category": "operations",
+        "complexity_level": "simple",
+        "complexity_score": 0.21999999999999997,
+        "original_f1": 0.0,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 3,
+          "similarity_threshold": 0.744,
+          "max_context_length": 512,
+          "lora_rank": 4,
+          "temperature": 0.3
+        }
+      },
+      {
+        "query": "How were offshore operations managed in 2024?",
+        "category": "operations",
+        "complexity_level": "medium",
+        "complexity_score": 0.47500000000000003,
+        "original_f1": 0.0,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 6,
+          "similarity_threshold": 0.6475,
+          "max_context_length": 1024,
+          "lora_rank": 8,
+          "temperature": 0.5
+        }
+      },
+      {
+        "query": "How did operations change in 2023?",
+        "category": "operations",
+        "complexity_level": "medium",
+        "complexity_score": 0.335,
+        "original_f1": 0.07317073170731707,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 6,
+          "similarity_threshold": 0.6335,
+          "max_context_length": 1024,
+          "lora_rank": 8,
+          "temperature": 0.5
+        }
+      },
+      {
+        "query": "How did operations change in 2014?",
+        "category": "operations",
+        "complexity_level": "medium",
+        "complexity_score": 0.335,
+        "original_f1": 0.0,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 6,
+          "similarity_threshold": 0.6335,
+          "max_context_length": 1024,
+          "lora_rank": 8,
+          "temperature": 0.5
+        }
+      },
+      {
+        "query": "How was technology used to improve operations in 2021?",
+        "category": "technology",
+        "complexity_level": "medium",
+        "complexity_score": 0.335,
+        "original_f1": 0.0,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 6,
+          "similarity_threshold": 0.6335,
+          "max_context_length": 1024,
+          "lora_rank": 8,
+          "temperature": 0.5
+        }
+      },
+      {
+        "query": "How were offshore operations managed in 2011?",
+        "category": "operations",
+        "complexity_level": "medium",
+        "complexity_score": 0.47500000000000003,
+        "original_f1": 0.0,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 6,
+          "similarity_threshold": 0.6475,
+          "max_context_length": 1024,
+          "lora_rank": 8,
+          "temperature": 0.5
+        }
+      },
+      {
+        "query": "How did operations change in 2024?",
+        "category": "operations",
+        "complexity_level": "medium",
+        "complexity_score": 0.335,
+        "original_f1": 0.0,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 6,
+          "similarity_threshold": 0.6335,
+          "max_context_length": 1024,
+          "lora_rank": 8,
+          "temperature": 0.5
+        }
+      },
+      {
+        "query": "How did operations change in 2022?",
+        "category": "operations",
+        "complexity_level": "medium",
+        "complexity_score": 0.335,
+        "original_f1": 0.0,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 6,
+          "similarity_threshold": 0.6335,
+          "max_context_length": 1024,
+          "lora_rank": 8,
+          "temperature": 0.5
+        }
+      },
+      {
+        "query": "What were the main operational activities in 2024?",
+        "category": "operations",
+        "complexity_level": "simple",
+        "complexity_score": 0.21999999999999997,
+        "original_f1": 0.11764705882352941,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 3,
+          "similarity_threshold": 0.744,
+          "max_context_length": 512,
+          "lora_rank": 4,
+          "temperature": 0.3
+        }
+      },
+      {
+        "query": "What operational improvements were made in 2015?",
+        "category": "operations",
+        "complexity_level": "simple",
+        "complexity_score": 0.16999999999999998,
+        "original_f1": 0.12345679012345678,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 3,
+          "similarity_threshold": 0.734,
+          "max_context_length": 512,
+          "lora_rank": 4,
+          "temperature": 0.3
+        }
+      },
+      {
+        "query": "How did the business strategy evolve in 2017?",
+        "category": "strategy",
+        "complexity_level": "medium",
+        "complexity_score": 0.40499999999999997,
+        "original_f1": 0.0,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 6,
+          "similarity_threshold": 0.6405,
+          "max_context_length": 1024,
+          "lora_rank": 8,
+          "temperature": 0.5
+        }
+      },
+      {
+        "query": "What were the main operational activities in 2011?",
+        "category": "operations",
+        "complexity_level": "simple",
+        "complexity_score": 0.21999999999999997,
+        "original_f1": 0.0,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 3,
+          "similarity_threshold": 0.744,
+          "max_context_length": 512,
+          "lora_rank": 4,
+          "temperature": 0.3
+        }
+      },
+      {
+        "query": "What were the production figures for 2020?",
+        "category": "production",
+        "complexity_level": "medium",
+        "complexity_score": 0.375,
+        "original_f1": 0.07792207792207792,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 6,
+          "similarity_threshold": 0.6375,
+          "max_context_length": 1024,
+          "lora_rank": 8,
+          "temperature": 0.5
+        }
+      },
+      {
+        "query": "What capital projects were approved in 2012?",
+        "category": "projects",
+        "complexity_level": "simple",
+        "complexity_score": 0.16999999999999998,
+        "original_f1": 0.022988505747126433,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 3,
+          "similarity_threshold": 0.734,
+          "max_context_length": 512,
+          "lora_rank": 4,
+          "temperature": 0.3
+        }
+      },
+      {
+        "query": "What were the main operational activities in 2023?",
+        "category": "operations",
+        "complexity_level": "simple",
+        "complexity_score": 0.21999999999999997,
+        "original_f1": 0.0,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 3,
+          "similarity_threshold": 0.744,
+          "max_context_length": 512,
+          "lora_rank": 4,
+          "temperature": 0.3
+        }
+      },
+      {
+        "query": "How were offshore operations managed in 2024?",
+        "category": "operations",
+        "complexity_level": "medium",
+        "complexity_score": 0.21999999999999997,
+        "original_f1": 0.0,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 6,
+          "similarity_threshold": 0.6475,
+          "max_context_length": 1024,
+          "lora_rank": 8,
+          "temperature": 0.5
+        }
+      },
+      {
+        "query": "What project milestones were achieved in 2017?",
+        "category": "projects",
+        "complexity_level": "simple",
+        "complexity_score": 0.16999999999999998,
+        "original_f1": 0.08571428571428572,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 3,
+          "similarity_threshold": 0.734,
+          "max_context_length": 512,
+          "lora_rank": 4,
+          "temperature": 0.3
+        }
+      },
+      {
+        "query": "What were the key financial metrics for 2017?",
+        "category": "financial",
+        "complexity_level": "simple",
+        "complexity_score": 0.26,
+        "original_f1": 0.025,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 3,
+          "similarity_threshold": 0.752,
+          "max_context_length": 512,
+          "lora_rank": 4,
+          "temperature": 0.3
+        }
+      },
+      {
+        "query": "What was the profit margin in 2023?",
+        "category": "financial",
+        "complexity_level": "medium",
+        "complexity_score": 0.33499999999999996,
+        "original_f1": 0.042105263157894736,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 6,
+          "similarity_threshold": 0.6335,
+          "max_context_length": 1024,
+          "lora_rank": 8,
+          "temperature": 0.5
+        }
+      },
+      {
+        "query": "What were the key financial metrics for 2023?",
+        "category": "financial",
+        "complexity_level": "simple",
+        "complexity_score": 0.26,
+        "original_f1": 0.05063291139240506,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 3,
+          "similarity_threshold": 0.752,
+          "max_context_length": 512,
+          "lora_rank": 4,
+          "temperature": 0.3
+        }
+      },
+      {
+        "query": "What were the financial results for 2020?",
+        "category": "financial",
+        "complexity_level": "simple",
+        "complexity_score": 0.21,
+        "original_f1": 0.023529411764705882,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 3,
+          "similarity_threshold": 0.742,
+          "max_context_length": 512,
+          "lora_rank": 4,
+          "temperature": 0.3
+        }
+      },
+      {
+        "query": "What was the company strategy in 2022?",
+        "category": "strategy",
+        "complexity_level": "medium",
+        "complexity_score": 0.355,
+        "original_f1": 0.07407407407407407,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 6,
+          "similarity_threshold": 0.6355,
+          "max_context_length": 1024,
+          "lora_rank": 8,
+          "temperature": 0.5
+        }
+      },
+      {
+        "query": "How did project execution perform in 2021?",
+        "category": "projects",
+        "complexity_level": "medium",
+        "complexity_score": 0.345,
+        "original_f1": 0.0975609756097561,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 6,
+          "similarity_threshold": 0.6345,
+          "max_context_length": 1024,
+          "lora_rank": 8,
+          "temperature": 0.5
+        }
+      },
+      {
+        "query": "What challenges were faced in operations during 2018?",
+        "category": "operations",
+        "complexity_level": "simple",
+        "complexity_score": 0.21,
+        "original_f1": 0.20512820512820512,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 3,
+          "similarity_threshold": 0.742,
+          "max_context_length": 512,
+          "lora_rank": 4,
+          "temperature": 0.3
+        }
+      },
+      {
+        "query": "How did operations change in 2016?",
+        "category": "operations",
+        "complexity_level": "medium",
+        "complexity_score": 0.335,
+        "original_f1": 0.0,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 6,
+          "similarity_threshold": 0.6335,
+          "max_context_length": 1024,
+          "lora_rank": 8,
+          "temperature": 0.5
+        }
+      },
+      {
+        "query": "What were the main operational activities in 2024?",
+        "category": "operations",
+        "complexity_level": "simple",
+        "complexity_score": 0.335,
+        "original_f1": 0.16666666666666666,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 3,
+          "similarity_threshold": 0.744,
+          "max_context_length": 512,
+          "lora_rank": 4,
+          "temperature": 0.3
+        }
+      },
+      {
+        "query": "What were the production figures for 2017?",
+        "category": "production",
+        "complexity_level": "medium",
+        "complexity_score": 0.375,
+        "original_f1": 0.02631578947368421,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 6,
+          "similarity_threshold": 0.6375,
+          "max_context_length": 1024,
+          "lora_rank": 8,
+          "temperature": 0.5
+        }
+      },
+      {
+        "query": "What were the production figures for 2011?",
+        "category": "production",
+        "complexity_level": "medium",
+        "complexity_score": 0.375,
+        "original_f1": 0.024999999999999998,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 6,
+          "similarity_threshold": 0.6375,
+          "max_context_length": 1024,
+          "lora_rank": 8,
+          "temperature": 0.5
+        }
+      },
+      {
+        "query": "What challenges were faced in operations during 2019?",
+        "category": "operations",
+        "complexity_level": "simple",
+        "complexity_score": 0.21,
+        "original_f1": 0.14814814814814814,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 3,
+          "similarity_threshold": 0.742,
+          "max_context_length": 512,
+          "lora_rank": 4,
+          "temperature": 0.3
+        }
+      },
+      {
+        "query": "What was the revenue in 2013?",
+        "category": "financial",
+        "complexity_level": "simple",
+        "complexity_score": 0.21,
+        "original_f1": 0.04878048780487805,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 3,
+          "similarity_threshold": 0.742,
+          "max_context_length": 512,
+          "lora_rank": 4,
+          "temperature": 0.3
+        }
+      },
+      {
+        "query": "How did operations change in 2023?",
+        "category": "operations",
+        "complexity_level": "medium",
+        "complexity_score": 0.21,
+        "original_f1": 0.0,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 6,
+          "similarity_threshold": 0.6335,
+          "max_context_length": 1024,
+          "lora_rank": 8,
+          "temperature": 0.5
+        }
+      },
+      {
+        "query": "What technological innovations were introduced in 2010?",
+        "category": "technology",
+        "complexity_level": "simple",
+        "complexity_score": 0.16999999999999998,
+        "original_f1": 0.0273972602739726,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 3,
+          "similarity_threshold": 0.734,
+          "max_context_length": 512,
+          "lora_rank": 4,
+          "temperature": 0.3
+        }
+      },
+      {
+        "query": "What were the strategic priorities for 2023?",
+        "category": "strategy",
+        "complexity_level": "simple",
+        "complexity_score": 0.16999999999999998,
+        "original_f1": 0.02380952380952381,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 3,
+          "similarity_threshold": 0.734,
+          "max_context_length": 512,
+          "lora_rank": 4,
+          "temperature": 0.3
+        }
+      },
+      {
+        "query": "What operational improvements were made in 2020?",
+        "category": "operations",
+        "complexity_level": "simple",
+        "complexity_score": 0.16999999999999998,
+        "original_f1": 0.11627906976744186,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 3,
+          "similarity_threshold": 0.734,
+          "max_context_length": 512,
+          "lora_rank": 4,
+          "temperature": 0.3
+        }
+      },
+      {
+        "query": "How were offshore operations managed in 2019?",
+        "category": "operations",
+        "complexity_level": "medium",
+        "complexity_score": 0.47500000000000003,
+        "original_f1": 0.1,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 6,
+          "similarity_threshold": 0.6475,
+          "max_context_length": 1024,
+          "lora_rank": 8,
+          "temperature": 0.5
+        }
+      },
+      {
+        "query": "What was the safety performance in 2011?",
+        "category": "safety",
+        "complexity_level": "medium",
+        "complexity_score": 0.43499999999999994,
+        "original_f1": 0.09523809523809525,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 6,
+          "similarity_threshold": 0.6435,
+          "max_context_length": 1024,
+          "lora_rank": 8,
+          "temperature": 0.5
+        }
+      },
+      {
+        "query": "What challenges were faced in operations during 2018?",
+        "category": "operations",
+        "complexity_level": "simple",
+        "complexity_score": 0.43499999999999994,
+        "original_f1": 0.10126582278481014,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 3,
+          "similarity_threshold": 0.742,
+          "max_context_length": 512,
+          "lora_rank": 4,
+          "temperature": 0.3
+        }
+      },
+      {
+        "query": "What were the main operational activities in 2010?",
+        "category": "operations",
+        "complexity_level": "simple",
+        "complexity_score": 0.21999999999999997,
+        "original_f1": 0.03278688524590164,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 3,
+          "similarity_threshold": 0.744,
+          "max_context_length": 512,
+          "lora_rank": 4,
+          "temperature": 0.3
+        }
+      },
+      {
+        "query": "How was technology used to improve operations in 2016?",
+        "category": "technology",
+        "complexity_level": "medium",
+        "complexity_score": 0.335,
+        "original_f1": 0.0,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 6,
+          "similarity_threshold": 0.6335,
+          "max_context_length": 1024,
+          "lora_rank": 8,
+          "temperature": 0.5
+        }
+      },
+      {
+        "query": "What were the main operational activities in 2020?",
+        "category": "operations",
+        "complexity_level": "simple",
+        "complexity_score": 0.21999999999999997,
+        "original_f1": 0.0,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 3,
+          "similarity_threshold": 0.744,
+          "max_context_length": 512,
+          "lora_rank": 4,
+          "temperature": 0.3
+        }
+      },
+      {
+        "query": "What was the profit margin in 2024?",
+        "category": "financial",
+        "complexity_level": "medium",
+        "complexity_score": 0.33499999999999996,
+        "original_f1": 0.02173913043478261,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 6,
+          "similarity_threshold": 0.6335,
+          "max_context_length": 1024,
+          "lora_rank": 8,
+          "temperature": 0.5
+        }
+      },
+      {
+        "query": "What were the safety statistics for 2022?",
+        "category": "safety",
+        "complexity_level": "medium",
+        "complexity_score": 0.33499999999999996,
+        "original_f1": 0.3529411764705882,
+        "retrieval_docs": 5,
+        "adapted_parameters": {
+          "retrieval_k": 6,
+          "similarity_threshold": 0.6335,
+          "max_context_length": 1024,
+          "lora_rank": 8,
+          "temperature": 0.5
+        }
+      }
+    ],
+    "complexity_distribution": {
+      "simple": 23,
+      "medium": 27,
+      "complex": 0
+    },
+    "complexity_stats": {
+      "simple": {
+        "count": 23,
+        "percentage": 46.0,
+        "avg_complexity_score": 0.223695652173913,
+        "avg_original_f1": 0.06675931415847106,
+        "avg_retrieved_docs": 5.0,
+        "categories": [
+          "operations",
+          "financial",
+          "production",
+          "technology",
+          "projects",
+          "strategy"
+        ]
+      },
+      "medium": {
+        "count": 27,
+        "percentage": 54.0,
+        "avg_complexity_score": 0.3587037037037038,
+        "avg_original_f1": 0.040123045038853875,
+        "avg_retrieved_docs": 5.0,
+        "categories": [
+          "operations",
+          "financial",
+          "production",
+          "technology",
+          "safety",
+          "projects",
+          "strategy"
+        ]
+      },
+      "complex": {
+        "count": 0,
+        "percentage": 0,
+        "avg_complexity_score": 0,
+        "avg_original_f1": 0,
+        "avg_retrieved_docs": 0,
+        "categories": []
+      }
+    },
+    "controller_stats": {
+      "total_adaptations": 46,
+      "average_complexity": 0.296304347826087,
+      "complexity_distribution": {
+        "simple": 21,
+        "medium": 25,
+        "complex": 0
+      },
+      "cache_hit_rate": 1.0
+    }
+  },
+  "improvement_simulation": {
+    "improvements_by_complexity": {
+      "simple": {
+        "count": 23,
+        "original_f1": 0.06675931415847106,
+        "improved_f1": 0.07677321128224171,
+        "improvement_percent": 14.999999999999995,
+        "improvement_factor": 1.15
+      },
+      "medium": {
+        "count": 27,
+        "original_f1": 0.040123045038853875,
+        "improved_f1": 0.05015380629856735,
+        "improvement_percent": 25.00000000000001,
+        "improvement_factor": 1.25
+      }
+    },
+    "overall_metrics": {
+      "original_f1": 0.052375728833877776,
+      "improved_f1": 0.06239873259105755,
+      "improvement_percent": 19.13673371299546,
+      "total_queries": 50
+    }
+  },
+  "adaptation_benchmark": {
+    "total_queries": 6,
+    "avg_adaptation_time": 0.000377964973449707,
+    "min_adaptation_time": 0.0002503156661987305,
+    "max_adaptation_time": 0.0006769418716430664,
+    "std_adaptation_time": 0.00014529481532871567,
+    "throughput": 2645.74780798587,
+    "complexity_distribution": {
+      "simple": 4,
+      "medium": 1,
+      "complex": 1
+    }
+  }
+}
